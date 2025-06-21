@@ -2,9 +2,9 @@
 public class addTwoNumbers {
     public static void main(String[] args) {
         // Creating nodes
-        Listnode head = new Listnode(10);
-        head.next = new Listnode(20);
-        head.next.next = new Listnode(30);
+        Listnode head = new Listnode(8);
+        head.next = new Listnode(2);
+        head.next.next = new Listnode(5);
         Listnode tail=new Listnode(20);
         tail.next=new Listnode(25);
         tail.next.next=new Listnode(40);
@@ -21,6 +21,9 @@ public class addTwoNumbers {
             System.out.print(node.val + " ");
             node = node.next;
         }
+    }
+    public Listnode addTwoNumbers(Listnode l1,Listnode l2){
+
     }
 }
 
