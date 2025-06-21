@@ -6,12 +6,13 @@ public class addTwoNumbers {
         head.next = new Listnode(20);
         head.next.next = new Listnode(30);
         Listnode tail=new Listnode(20);
-        head.next=new Listnode(25);
-        head.next.next=new Listnode(40);
+        tail.next=new Listnode(25);
+        tail.next.next=new Listnode(40);
         // Print the list
-        System.out.println("First list = ");
+        System.out.print("First list = ");
         printList(head);
-        System.out.println("Second list = ");
+        System.out.println("");
+        System.out.print("Second list = ");
         printList(tail);
     }
 
