@@ -22,9 +22,6 @@ public class addTwoNumbers {
             node = node.next;
         }
     }
-    public Listnode addTwoNumbers(Listnode l1,Listnode l2){
-
-    }
 }
 
 
