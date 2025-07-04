@@ -10,12 +10,12 @@ public class primeNum {
     }
     public static String calcPrime(int n){
         int c=0;
-        for(int i=1;i<=n/2;i++){
+        for(int i=1;i<=n;i++){
             if(n%i==0){
                 c++;
             }
         }
-        if(c==1){
+        if(c==2){
             return "YES";
         } else
             return "NO";
