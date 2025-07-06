@@ -9,7 +9,7 @@ public class incrementOne {
         int lastIndex= digits.length;
         int num=digits[lastIndex-1];
         int num2=digits[lastIndex-2];
-        if(num+1>9){ return d
+        if(num+1>9){ return
         } else return digits[lastIndex-1]=digits[lastIndex-1]+1;
 
     }
