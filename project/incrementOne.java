@@ -2,15 +2,16 @@ package project;
 
 public class incrementOne {
     public static void main(String[] args) {
-
+        int[] ar={1,2,3};
+        System.out.println(plusOne(ar));
     }
-    public int[] plusOne(int[] digits) {
+    public static int[] plusOne(int[] digits) {
         int lastIndex= digits.length;
-        if(digits[lastIndex-1]+1>9){
-            digits[lastIndex-2]=digits[lastIndex-2]+1;
-            digits[lastIndex-1]=(digits[lastIndex-1]+1)%10;
-        } else digits[lastIndex-1]=digits[lastIndex-1]+1;
-        return digits[]
+        int num=digits[lastIndex-1];
+        int num2=digits[lastIndex-2];
+        if(num+1>9){ return d
+        } else return digits[lastIndex-1]=digits[lastIndex-1]+1;
+
     }
 }
 
