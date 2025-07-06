@@ -6,12 +6,21 @@ public class incrementOne {
         System.out.println(plusOne(ar));
     }
     public static int[] plusOne(int[] digits) {
+        int[] newArr=new int[digits.length];
         int lastIndex= digits.length;
-        int num=digits[lastIndex-1];
-        int num2=digits[lastIndex-2];
-        if(num+1>9){ return
-        } else return digits[lastIndex-1]=digits[lastIndex-1]+1;
-
+        int lastNum1=digits[lastIndex-1];
+        int lastNum2=digits[lastIndex-2];
+        for(int i=0;i<digits.length;i++){
+            newArr[i]=digits[i];
+        }
+        if(lastNum1+1>9){
+            newArr[lastIndex-1]=(lastNum1+1)%10;
+            newArr[lastIndex-2]=lastNum2+((lastNum1+1)/10);
+            return newArr;
+        } else {
+            newArr[lastIndex-1]=lastNum1+1;
+            return newArr;
+        }
     }
 }
 
