@@ -2,8 +2,11 @@ package project;
 
 public class incrementOne {
     public static void main(String[] args) {
-        int[] ar={1,2,3};
-        System.out.println(plusOne(ar));
+        int[] ar={1,2,3,4,5,6};
+        int[] newChico=plusOne(ar);
+        for(int i=0; i<ar.length;i++){
+            System.out.print(newChico[i]+" ");
+        }
     }
     public static int[] plusOne(int[] digits) {
         int[] newArr=new int[digits.length];
@@ -16,11 +19,10 @@ public class incrementOne {
         if(lastNum1+1>9){
             newArr[lastIndex-1]=(lastNum1+1)%10;
             newArr[lastIndex-2]=lastNum2+((lastNum1+1)/10);
-            return newArr;
-        } else {
+        } else
             newArr[lastIndex-1]=lastNum1+1;
-            return newArr;
-        }
+          return newArr;
+
     }
 }
 
