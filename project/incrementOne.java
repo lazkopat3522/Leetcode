@@ -8,7 +8,8 @@ public class incrementOne {
         int lastIndex= digits.length;
         if(digits[lastIndex-1]+1>9){
             digits[lastIndex-2]=digits[lastIndex-2]+1;
-        } else
+            digits[lastIndex-1]=(digits[lastIndex-1]+1)%10;
+        } else digits[lastIndex-1]=digits[lastIndex-1]+1;
         return digits[]
     }
 }
