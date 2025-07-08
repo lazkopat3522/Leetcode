@@ -15,9 +15,15 @@ public class incrementOne {
         for(int i=0;i<digits.length;i++){
             newArr[i]=digits[i];
         }
-        while(lastNum+1<10) {
-            1;
-        }
+        int c=1;
+        if(lastNum+1>9){
+            while(lastNum+1>9) {
+                newArr[lastIndex-1]=(lastNum+1)%10;
+                c++;
+                lastNum=newArr[lastIndex-c];
+                lastIndex--;
+            }
+        } else newArr[lastIndex-1]=lastNum+1;
           return newArr;
 
     }
