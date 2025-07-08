@@ -18,11 +18,11 @@ public class incrementOne {
         int c=1;
         if(lastNum+1>9){
             while(lastNum+1>9) {
-                newArr[lastIndex-1]=(lastNum+1)%10;
+                newArr[lastIndex-c]=(lastNum+1)%10;
                 c++;
                 lastNum=newArr[lastIndex-c]+1;
-                lastIndex--;
             }
+            newArr[lastIndex-c]=newArr[lastIndex-c]+1;
         } else newArr[lastIndex-1]=lastNum+1;
           return newArr;
 
