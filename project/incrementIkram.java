@@ -5,7 +5,7 @@ public class incrementIkram {
         int[] ar={9};
         int num=0;
         for(int i=0;i< ar.length;i++){
-        num=num+ar[i+1]
+        num=num+ar[i]
         }
     }
 }
